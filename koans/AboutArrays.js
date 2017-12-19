@@ -4,7 +4,7 @@ describe("About Arrays", function() {
   it("should create arrays", function() {
     var emptyArray = [];
     expect(typeof(emptyArray)).toBe('object'); // A mistake?-- http:javascript.crockford.com/remedial.html
-    expect(emptyArray.length).toBe(undefined);
+    expect(emptyArray.length).toBe(0);
 
     var multiTypeArray = [0, 1, "two", function() { return 3; }, {value1: 4, value2: 5}, [6, 7]];
     expect(multiTypeArray[0]).toBe(0);
@@ -23,10 +23,10 @@ describe("About Arrays", function() {
     expect(array).toEqual([1]);
 
     array[1] = 2;
-    expect(array).toEqual([1, FILL_ME_IN]);
+    expect(array).toEqual([1, 2]);
 
     array.push(3);
-    expect(array).toEqual(FILL_ME_IN);
+    expect(array).toEqual([1, 2, 3]);
   });
 
   it("should understand array length", function() {
