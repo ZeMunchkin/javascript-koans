@@ -17,7 +17,6 @@ describe("About Expects", function() {
   it("should assert equality a better way", function() {
 	  var expectedValue = 2;
 	  var actualValue = 1 + 1;
-    var expect = chai.expect;
   // toEqual() compares using common sense equality.
 	  expect(actualValue).toEqual(expectedValue);
   });
