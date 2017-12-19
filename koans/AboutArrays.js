@@ -40,7 +40,7 @@ describe("About Arrays", function() {
     expect(tenEmptyElementArray.length).toBe(10);
 
     tenEmptyElementArray.length = 5;
-    expect(tenEmptyElementArray.length).toBe(10);
+    expect(tenEmptyElementArray.length).toBe(5);
   });
 
   it("should slice arrays", function() {
